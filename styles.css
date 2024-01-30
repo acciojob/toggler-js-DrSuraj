@@ -1,1 +1,41 @@
 /*  your css code here. If applicable */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.g1, .g2, .g3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toggle {
+    display: none;
+}
+
+.g1, .g2, .g3 {
+    cursor: pointer;
+}
+
+.g1, .g2, .g3:hover {
+    background-color: #f2f2f2;
+}
+
+.g1 input:checked ~ span {
+    color: green;
+}
+
+.g2 input:checked ~ span {
+    color: blue;
+}
+
+.g3 input:checked ~ span {
+    color: red;
+}
